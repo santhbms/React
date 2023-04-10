@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function fndemo()
+       {
+          const backendcourses=["SQL SERVER","MYSQL","DB-II"]
+          const fronendcourses=['HTML','CSS','JS','Angular']
+          const courses=['C#','Java','Python',...backendcourses,...fronendcourses]
+
+         document.write(...fronendcourses);
+         document.write(...backendcourses)
+
+          document.write('<ol>');
+          for(var i=0;i<courses.length;i++)
+          {
+            document.write('<li>'+courses[i]+'</li>');
+          }
+          document.write('</ol>');
+       }
+    </script>
+</head>
+<body>
+    <button id="btn1" name="btn1" onclick="fndemo()">Click Me</button>
+</body>
+</html>
