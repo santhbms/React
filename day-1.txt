@@ -1,0 +1,131 @@
+Visual Studio Code
+Chrome/Edge
+Node JS
+
+What is React:
+-It is a Open Source Library For building UI Projects
+-It is introduced by Facebook/Meta
+-Reusable Code
+-DOM Updates will be handled by REACT
+-React Native will produce mobile apps
+
+Fundamentals
+HTTP
+Routing
+Redux
+Utilities
+
+npx create-react-app myfirstproject
+cd myfirstproject
+npm start
+
+https://localhost:3000
+
+npm install -g n latest
+
+PWA 
+
+Componets:
+  render()
+    -return JSX/HTML
+
+*.js
+*.jsx
+
+var vs const vs let
+
+var a=10;
+a=20;
+
+spread operator
+...
+
+AJAX:
+ Fetch
+ XMLHttpRequest
+
+Components in React:
+---------------------------
+Components are part of UI
+These are the beuilding blocks are react apps
+in react template, the root component will be names as "APP"
+Components are reusable and we can nest one inside another 
+Components will be created as a file with extension of *.js or *.jsx
+
+Components are of 2 types:
+
+	1.Stateless Functional Components
+	   (these are regular JavaScript Functions which will return HTML)
+
+	2.Stateful Class Components:
+           (these are ES Classes extending 'Component' from react library)
+
+
+Functional Components:
+props-------------functional components------------------JSX/HTML
+
+Class Components:
+props(optional)-------------class components------------------JSX/HTML
+State
+
+
+Functional Components:
+-Simple Functions
+-We can avoid 'This' Keyword
+- we can use props & state
+-Stateless/Presentational Components
+
+
+Class Components:
+-These are ES6 CLasses
+-We have to use this keyword
+- we can use props & state
+-It SUpport Life Cycle HOOKS
+-Stateful/smart/Container Components
+
+
+JSX:
+-----
+-JSX stands for JavaScript XML
+-It is an extensions to JavaScript Language Syntax
+-It Looks like XML
+-It supports elements and components
+-JSX tags have name,attributes and children similar to HTML
+-React Apps can be constructed with or without JSX
+-JSX can be transpiles/converts to pure JavaScript for Browser Understandability 
+
+Props:
+--------
+-These will be passed to the component
+-Function Parameters
+-Props are immutable
+
+
+State:
+-------
+-State is managed within components
+-state can be changed
+-state can be declared within the body
+useState: Functional
+this.state: Class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

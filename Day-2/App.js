@@ -14,6 +14,9 @@ import ConditionalRendering3 from './Components/ConditionalRendering3';
 import ConditionalRendering4 from './Components/ConditionalRendering4';
 import ListDemo1 from './Components/ListDemo1';
 import ListDemo2 from './Components/ListDemo2';
+import CSSStylesDemo from './Components/CSSStylesDemo';
+import FormsDemo from './Components/FormsDemo';
+import ComponentA from './Components/ComponentA';
 
 function App() {
   return (
@@ -38,7 +41,9 @@ function App() {
         {/* <ConditionalRendering4/> */}
         {/* <ListDemo1/> */}
 
-        <ListDemo2/>
+        {/* <CSSStylesDemo status={true}/> */}
+        {/* <FormsDemo/> */}
+        <ComponentA/>
      </div>
   );
 }

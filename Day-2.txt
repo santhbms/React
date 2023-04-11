@@ -1,0 +1,77 @@
+Life Cycle Methods:
+   1.Mounting
+       when an instance of a component being created and inserted into the dom
+		constructor()
+		static getDerivedStateFromProps()
+              render()
+		componentDidMount()
+   2.Updating
+      when a component is being re-rendered as a result of changes to props or state
+		static getDerivedStateFromProps()
+		shouldComponentUpdate()
+		render()
+		getSnapshotBeforeUpdate()
+		ComponentDidUpdate()
+   3.Unmounting
+		when a component is being removed from the DOM
+		componentWillUnmount()
+   4.Error Handling
+		when ever there is an error during rendering/in life cycle of component/constructor/child component
+		static getDerivedSTateFromError()
+		componentDidCatch()
+
+
+Mounting Life Cycle:
+--------------------------
+constructor():
+	1.when component is being created 
+	2.It will be useful for init of state and event bindings
+	3.we can directly override state by using 'this.state'
+
+static getDerivedStateFromProps(props,state):
+	1.when the state of the component depends on changes in props over time
+	2.It will be helpful for set the state
+
+render():
+	1.This is Required Method
+	2.Read Props & state and return JSX
+	3.We can also render child components
+
+componentDidMount():
+	1.Invoked immediately after a component and all its child components are rendered to the DOM
+	2.If we make AJAX calls, it will gives exceptions
+
+
+Updating Life Cycle Method:
+-----------------------------------
+static getDerivedStateFromProps()
+	1.This method will be called every time when a component is re-rendered
+	2.It will be useful for SetStae
+
+shouldComponentUpdate():
+	1.It dictates if the component should re-render or not
+	2.Preformance optimization
+
+render():
+	1.This is Required Method
+	2.Read Props & state and return JSX
+	3.We can also render child components
+
+getSnapshotBeforeUpdate(prevProps,prevState):
+	1.called right before the changes form Virtual DOM are beging reflected to DOM
+	2.This method either return null or  a value.
+	3.Returned value will be passes as the third parameter to the next method
+
+ComponentDidUpdate(prevPros,prevState,snapshot):
+	1.This method will be called after the render finished re-render
+
+
+UnMounting Phase Method:
+   componentWillUnmount():
+	1. method is invoked imediately before a component is unmounted and destroyed
+	2. removing/deleting event handlers, cancelling of subscriptions
+
+Error Handling Phase Methods:
+  static getDerivedStateFromError(error)
+  componentDIdCatch(error,info)
+
