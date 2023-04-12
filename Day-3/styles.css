@@ -1,0 +1,10 @@
+.status-online{
+    color:green;
+    font-size: 36px;
+}
+
+.status-offline{
+    color:red;
+    font-size: 36px;
+}
+
